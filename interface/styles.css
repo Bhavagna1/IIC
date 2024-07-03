@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:#343a40;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    padding-top: 18px;
+    font-size: 35px;
+    color: white;
+    height: 80px;
+}
+
+#new {
+    background-color: white;
+    text-align: center;
+    margin: 0;
+    height: 70px;
+    color: #f8f9fa;
+    padding-top: 80px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url('teacher.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 50px 20px;
+}
+
+.hero-text {
+    margin-top: 150px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.info-box {
+    max-width: 300px;
+    text-align: center;
+    margin: 20px;
+    border: 2px solid rgb(142, 132, 132);
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+.info-box:hover {
+    background-color: lightgray;
+    transform: translateY(-20px);
+}
+
+.info-box h3 {
+    font-size: 24px;
+    color: #333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.info-box p {
+    font-size: 16px;
+    color: #666;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.advertising img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color:rgb(221, 164, 164);
+        position: absolute;
+        top: 130px;
+        right: 0;
+        height: 70%;
+        padding-top: 60px;
+    }
+    nav ul li {
+        text-align: center;
+        padding: 20px 0;
+
+    }
+
+    nav ul li:hover{
+        background-color: #867f7f;
+        padding: 30px;
+        width: 100%;
+    }
+
+    .nav-toggle {
+        color: white;
+        background-color:#343a40;
+        font-size: 34px;
+        border: none;
+    
+    }
+
+    .nav-open {
+        display: flex;
+    }
+    .hero {
+        height: 50vh;
+    }
+
+    .hero-text {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    .nav-toggle {
+        display: none;
+    }
+}

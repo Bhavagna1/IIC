@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FacultyJob Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>FacultyJob</h1>
+        </div>
+        <nav>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <ul id="box" class="nav-links">
+                <li class="menu"><a class="active" href="#">Home</a></li>
+                <li class="menu"><a href="#">Jobs</a></li>
+                <li class="menu"><a href="#">Faculty</a></li>
+                <li class="menu"><a href="#">Students/Parents</a></li>
+                <li class="menu"><a href="#" class="login-btn">Login</a></li>
+                <li class="menu"><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>"It is the supreme art of the teacher to awaken joy in creative expression and knowledge."</h2>
+        </div>
+    </section>
+
+    <h1 id="new">Services</h1>
+    <section class="info">
+        <div class="info-box">
+           <h3>Part-Time educators</h3>
+           <p>"Faculty can get part time opportunities ,join coaching centers and work as a guest lecturers at schools."</p>
+        </div>
+        <div class="info-box">
+            <h3>Full-Time educators</h3>
+            <p>"Explore full-time job opportunities. Faculty can request Headmasters for full time job as a teacher."</p>
+        </div>
+        <div class="info-box">
+            <h3>Home-Tutors</h3>
+            <p>"Unlock your child's potential with personalized, one-on-one home tutoring tailored to their unique learning needs and schedule."</p>
+        </div>
+    </section>
+
+    <section class="advertising">
+        <img src="s.jpg" alt="Advertisement">
+    </section>
+
+    <footer>
+        <p>&copy; 2024 FacultyJob. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('box');
+
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-open');
+        });
+    </script>
+</body>
+</html>
